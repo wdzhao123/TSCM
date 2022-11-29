@@ -1,0 +1,16 @@
+01 baseball_field
+02 basketball_field
+03 overpass
+04 stadium
+05 harbor
+06 helicoptor
+07 bus
+08 plane
+09 roundabout
+10 ship
+11 car
+12 soccer_field
+13 oil_tank
+14 swimming_pool
+15 tennis_court
+
