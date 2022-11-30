@@ -33,6 +33,8 @@ You can download post-processed datasets from these links( google drive ):
 **[DIOR-RSOR](https://drive.google.com/file/d/1xu_hhQpdUVkwY02oQwrMrtVlDPZSiDvV/view?usp=share_link).**  
 
 ## File Structure
+Trained model are saved in **Ready Model** folder, unzip it from .zip to .pth
+
 >TSCM  
 ├── data  
 │   ├── DIOR_RSOR  
@@ -52,6 +54,7 @@ You can download post-processed datasets from these links( google drive ):
 ├── eval.py  
 └── version_check.py  
 
+
 # Requirements
 
 >PyTorch >= 1.3.1  
@@ -65,13 +68,15 @@ tqdm >= 4.61
 # Train and Eval
 
 ## Train
-> python train.py -h for detailed argparse params
+For detailed argparse params, run
+> python train.py -h
 
 If you don't intend to customize params and paths, run  
 > python train.py
 
 ## Eval
-> python eval.py -h for detailed argparse params
+For detailed argparse params, run
+> python eval.py -h 
 
 If you don't intend to customize params and paths, run  
 > python train.py
