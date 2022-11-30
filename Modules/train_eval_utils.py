@@ -35,7 +35,7 @@ def train_one_epoch(model, optimizer, data_loader, epoch, device='cuda'):
     return mean_loss.item()
 
 
-def train_one_epoch_IN(model, optimizer, data_loader, epoch, alpha=1, beta=1, gamma=1, device='cuda'):
+def train_one_epoch_IN(model, optimizer, data_loader, epoch, alpha=0.0, beta=0.0, gamma=0.0, device='cuda'):
     # Cn_Sm indicates feature combined by Content from n & Style from m
 
     model.train()
