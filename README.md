@@ -33,6 +33,10 @@ You can download post-processed datasets from these links( google drive ):
 **[DIOR-RSOR](https://drive.google.com/file/d/1xu_hhQpdUVkwY02oQwrMrtVlDPZSiDvV/view?usp=share_link).**  
 
 ## File Structure
+Trained model are saved in **Ready Model** folder, unzip ***ResNet-50-TSCM.zip***.  
+Note that *resnet50-pretrained.zip* is a model provided by [PyTorch pre-trained on ImageNet](https://download.pytorch.org/models/resnet50-19c8e357.pth), 
+we utilize it as initialized params of ResNet-50.
+
 >TSCM  
 ├── data  
 │   ├── DIOR_RSOR  
@@ -46,11 +50,16 @@ You can download post-processed datasets from these links( google drive ):
 ├── label_dic_10.npy  
 ├── Modules  
 ├── Ready Model  
+│   ├── emvironment.yml  
+│   ├── label_dict.txt  
+│   ├── resnet50-pretrained.zip  
+│   └── ResNet-50-TSCM.zip  
 ├── save  
 ├── train_and_test.py  
 ├── train.py  
 ├── eval.py  
 └── version_check.py  
+
 
 # Requirements
 
@@ -65,13 +74,15 @@ tqdm >= 4.61
 # Train and Eval
 
 ## Train
-> python train.py -h for detailed argparse params
+For detailed argparse params, run
+> python train.py -h
 
 If you don't intend to customize params and paths, run  
 > python train.py
 
 ## Eval
-> python eval.py -h for detailed argparse params
+For detailed argparse params, run
+> python eval.py -h 
 
 If you don't intend to customize params and paths, run  
-> python train.py
+> python eval.py
